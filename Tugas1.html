@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <title>TOMBOL SEMBUNYI DAN TAMPILKAN</title>
+    <!-- Cara Memanggil CSS -->
+    <Link Rel ="Stylesheet"
+    Type = "text/css" href = efek.css >
+    <!-- Cara Memanggil CSS -->
+    <script src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sembunyikan1").click(function () {$("#foto1").hide("slow")});
+            $(".tampilkan1").click(function () {$("#foto1").show("slow")});
+            $(".sembunyikan2").click(function () {$("#foto2").hide("slow")});
+            $(".tampilkan2").click(function () {$("#foto2").show("slow")})
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Cara Menyembunyikan dan Menampilkan Gambar</h1>
+    <button class="sembunyikan1">Sembunyikan</button>
+    <button class="tampilkan1">Tampilkan</button>
+    <p><img id="foto1" src="masjidmalang.png" width="150px" height="262"></p>
+
+    <button class="sembunyikan2">Sembunyikan</button>
+    <button class="tampilkan2">Tampilkan</button>
+    <p><img id="foto2" src="fotovii.png" width="150px" height="262"></p>
+</body>
+</html>

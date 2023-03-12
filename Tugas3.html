@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <title>Effect Fade</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#fadeout").click(function () {
+                $("#persegi").fadeOut("slow");
+            });
+            $("#fadein").click(function () { 
+                $("#persegi").fadeTo("slow",1);
+            });
+            $("#fadetime").click(function () {
+                $("#persegi").fadeTo("slow", 0.3);
+            });
+        });
+    </script>
+    <style type="text/css">
+        #persegi {
+            width: 230px;
+            height: 110px;
+            border: 5px solid lightskyblue;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Efek Fade Persegi Panjang</h1>
+    <div id="persegi"></div>
+    <p>
+        <button id="fadeout">Fade Out</button>
+        <button id="fadein">Fade In</button>
+        <button id="fadetime">Fade in 0.3</button>
+    </p>
+</body>
+</html>

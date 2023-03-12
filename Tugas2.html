@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <title>Event Double Click</title>
+    <Link Rel ="Stylesheet"
+    Type = "text/css" href = efek2.css >
+    <script src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("div").dblclick(function (){
+                $("#persegi1").dblclick(function () {$("#persegi1").addClass("warna1");
+                $("#persegi2").dblclick(function () {$("#persegi2").addClass("warna2");
+                $("#persegi3").dblclick(function () {$("#persegi3").addClass("warna3");
+                $("#persegi4").dblclick(function () {$("#persegi4").addClass("warna4");
+                            })
+                        })
+                    })
+                })
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Event Double Click Persegi </h1>
+    <p>Click 2x pada Persegi </p>
+    <p>Amati Perubahannya </p>
+    <div id="persegi1"></div>
+    <div id="persegi2"></div>
+    <div id="persegi3"></div>
+    <div id="persegi4"></div>
+</body>
+</html>
